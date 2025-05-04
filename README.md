@@ -1,9 +1,20 @@
 # newhaven-lcd-driver
-Includes functions programmed in MPLABX IDE for the PIC32MZ2048EFH100 microcontroller to control the Newhaven LCD (NHD-C0216CiZ-FSW-FBW-3V3) with built in ST7032i chip.
-Schematic shown below worked as part of a Capstone Project. 
+This code includes functions programmed in MPLABX IDE for the [PIC32MZ2048EFH100]([url](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC32MZ-Embedded-Connectivity-with-Floating-Point-Unit-Family-Data-Sheet-DS60001320H.pdf)) microcontroller to write formatted strings and control the cursor on the Newhaven LCD [NHD-C0216CiZ-FSW-FBW-3V3]([url](https://newhavendisplay.com/content/specs/NHD-C0216CiZ-FSW-FBW-3V3.pdf)) with built in ST7032i chip.
 
-![LCDSchematic](https://github.com/user-attachments/assets/67224a28-a16b-4256-bd69-50fc5b341711)
+## Schematic
+
+Schematic shows the necessary hardware added to the LCD. (Items not shown are 3.3V supply and PIC32MZ microcontroller.)
+
+![LCDSchematic](https://github.com/user-attachments/assets/896cdddf-206c-4d23-9624-1fc6dc687e36)
+
+### Pinout
+
+The pins on the microcontroller for LCD_SCK and LCD_SDA must be Open Drain configurable, since this is an I2C interface.
 
 Q1 was used to turn on the LCD backlight using a GPIO pin.
 
-Value of R4 was chosen to set to the nominal backlight current to 20mA.
+The value for R4 was chosen to set backlight LED current to the nominal 20mA.
+
+## The Code
+
+The main.c demonstrates the LCD Driver functions. It is programmed to create a countdown counter. It demonstrates the lcdGoTo() function by repeatedly going to a spot on screen, and overwriting the number of seconds to "launch."
