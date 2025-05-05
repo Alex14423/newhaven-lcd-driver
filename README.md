@@ -1,5 +1,5 @@
 # newhaven-lcd-driver
-This code includes functions programmed in MPLABX IDE for the [PIC32MZ2048EFH100]([url](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC32MZ-Embedded-Connectivity-with-Floating-Point-Unit-Family-Data-Sheet-DS60001320H.pdf)) microcontroller to write formatted strings and control the cursor on the Newhaven LCD [NHD-C0216CiZ-FSW-FBW-3V3]([url](https://newhavendisplay.com/content/specs/NHD-C0216CiZ-FSW-FBW-3V3.pdf)) with built in ST7032i chip.
+This code includes functions programmed in MPLABX IDE for the [PIC32MZ2048EFH100](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC32MZ-Embedded-Connectivity-with-Floating-Point-Unit-Family-Data-Sheet-DS60001320H.pdf) microcontroller to write formatted strings and control the cursor on the Newhaven LCD [NHD-C0216CiZ-FSW-FBW-3V3](https://newhavendisplay.com/content/specs/NHD-C0216CiZ-FSW-FBW-3V3.pdf) with built in ST7032i chip.
 
 ## Schematic
 
