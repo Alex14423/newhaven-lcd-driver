@@ -5,7 +5,7 @@ This code includes functions programmed in MPLABX IDE for the [PIC32MZ2048EFH100
 
 Schematic shows the necessary hardware added to the LCD. (Items not shown are 3.3V supply and PIC32MZ microcontroller.)
 
-![LCDSchematic](https://github.com/user-attachments/assets/896cdddf-206c-4d23-9624-1fc6dc687e36)
+![LCDSchematic](https://github.com/user-attachments/assets/447474af-e240-4e84-a071-022271d4fa35)
 
 ### Pinout
 
